@@ -4,19 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="WDD 131 – Dynamic Web Fundamentals" author="Christian Pena">
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+    <meta
+        description="WDD 131 – Dynamic Web Fundamentals. Explore the professional web development portfolio of an engineering student passionate about modern web design and building interactive websites.
+     This platform serves as an essential web resource showcasing my coding skills, unique projects, personal hobbies, and provides deep personal insights into my daily life and cultural experiences in Colombia."
+        author="Christian Pena">
+    <meta name="Christian Pena">
     <link rel="stylesheet" href="styles/base.css">
 
 
-    <title>Document</title>
-
+    <title>WDD131 Dynamic Web Fundamentals - Christian Pena</title>
+    <script src="js/getdates.js" defer></script>
 </head>
 
 <body>
     <header class="contenedor-header contenedor">
         <div class="contenido-header">
-            <p  class="contenido-nombre centrar-text">WDD 131 – Fundamentos de la Web
-                Dinámica<span>idcourse-title"</span></p>
+            <p class="contenido-nombre centrar-text"> WDD 131 – Fundamentos de la Web
+                Dinámica<span id="course-title"></span></p>
         </div>
         <nav class="contenido-barra">
             <a href="https://www.linkedin.com/">Linkedln</a>
@@ -24,73 +39,78 @@
             <a href=https://www.churchofjesuschrist.org/study/scriptures>Scripture</a>
 
         </nav>
-        
+
     </header>
     <h1 class="centrar-texto nombre contenedor">Christian R Peña </h1>
     <main class="contenedor-main contenedor">
-        
+
         <section class="card">
-             
+
             <div class="about-card">
                 About me
 
             </div>
-            
-             
-           
+
+
+
             <div class="card-container">
-               
-                <p>I am from Colombia. I studied systems engineering in Cúcuta two years ago, but I did not finish my degree. I am currently living in Virginia, USA. I love listening to music, 
-                    I am very passionate about it. I like going for walks while enjoying nature. I love the simple things in life, and that is my life..</p>
-                     <img src="images/profilee.jpg" alt="Profile picture" class="profile-pic">
-                
+
+                <p>I am from Colombia. I studied systems engineering in Cúcuta two years ago, but I did not finish my
+                    degree. I am currently living in Virginia, USA. I love listening to music,
+                    I am very passionate about it. I like going for walks while enjoying nature. I love the simple
+                    things in life, and that is my life..</p>
+                <img src="images/profilee.jpg" alt="Profile picture" class="profile-pic">
+
             </div>
             <h3 class="card-nombre__contenido">Cucuta, Colombia</h3>
             <hr>
             <div class="info_section">
                 <div class="flag-container">
-                      <img src="images/colombia-flag.jpg" alt="Colombia flag" class="contenido-card__imagen">
-                      <p class="caption">Flag of Colombia</p>
+                    <img src="images/colombia-flag.jpg" alt="Colombia flag" class="contenido-card__imagen">
+                    <p class="caption">Flag of Colombia</p>
 
                 </div>
                 <p class="description">
-                    Colombia is a country full of life, colors, and contrasts. From crystal-clear Caribbean beaches to green mountains, endless coffee plantations, and magical jungles, its natural beauty is breathtaking. Each region has its own charm, music, food, and history.
-. 💛💙❤️
+                    Colombia is a country full of life, colors, and contrasts. From crystal-clear Caribbean beaches to
+                    green mountains, endless coffee plantations, and magical jungles, its natural beauty is
+                    breathtaking. Each region has its own charm, music, food, and history.
+                    . 💛💙❤️
 
 
                 </p>
             </div>
         </section>
-        <section class="resource-card">
+        <section class="resource-card card">
 
-            
+
             <div class="card-header">
                 Web Dev Resources
-              
-              
+
+
             </div>
             <div class="card-body">
                 <ul>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="#">Smashing Magazine</a></li>
-                <li><a href="#">CSS Tricks</a></li>
-                <li><a href="#">W3 Schools</a></li>
-                <li><a href="#">Udemy</a></li>
-                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Lorem Picsum Image Placeholder</a></li>
                 </ul>
             </div>
 
         </section>
 
-       
+
 
 
     </main>
 
- <footer class="footer-copyright contenedor">
-            <p>&copy; 2026 | Christian Pena | Todos los derechos reservados</p>
+    <footer class="footer-copyright contenedor">
+        <p> &copy; <span id="currentyear"></span> | Christian Pena</p>
+        <p id="lastModified"></p>
 
-        </footer>
+    </footer>
 
 
 </body>
