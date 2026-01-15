@@ -1,7 +1,7 @@
 :root{
 
-    --fondo:#9FEE44;
-    --fondo-navigation:#11d645;
+    --fondo-barra:#9FEE44;
+    --color-hover:#11d645;
     --fondo-main:#0cd2ae;
     --fondo-aside:#045f94;
     --main-text:#44EE93;
@@ -70,7 +70,7 @@ body{
 .contenido-barra{
     display: flex;
     justify-content: space-around;
-    background-color: var(--fondo);
+    background-color: var(--fondo-barra);
     padding: 2rem 0rem;
 }
 
@@ -87,6 +87,7 @@ body{
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+     padding: 2rem 2rem;
 }
 .profile-pic{
     width: 250px;
@@ -136,9 +137,7 @@ hr{
 .card-body ul li a {
     text-decoration: none;
 }
-.card-container{
-    padding: 2rem 2rem;
-}
+
 .card{
     border: 1px solid #b9b4b4;
     border-radius: 10px;
@@ -160,13 +159,21 @@ padding: 1rem 0rem;
 }
 
 
-.footer-copyright{
+footer{
     text-align: center;
-   margin-top: 2rem;
    padding: 1rem 0rem;
     color: #666;
     background-color:var(--fondo-main) ;
     
+}
+.footer-copyright{
+    margin-top: 2rem;
+}
+
+/***Hover***/
+
+.card-body a:hover{
+    color:var(--color-hover) ;
 }
 
 
