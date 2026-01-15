@@ -28,6 +28,9 @@ h1{
     text-align: center;
     padding: 1rem 0rem;
 }
+h2{
+    margin: 0;
+}
 p{
     margin: 0;
     line-height: 1.8;
