@@ -4,7 +4,7 @@
     --color-hover:#11d645;
     --fondo-main:#0cd2ae;
     --fondo-aside:#045f94;
-    --main-text:#44EE93;
+    --main-text:#000000;
     --secundary-text:#4AEE44;
     --fuente-titlles:'inter', 'sans-serif';
     --fuente-main:'Fira code, monospace';
@@ -162,7 +162,7 @@ padding: 1rem 0rem;
 footer{
     text-align: center;
    padding: 1rem 0rem;
-    color: #666;
+    color: var(--main-text);
     background-color:var(--fondo-main) ;
     
 }
