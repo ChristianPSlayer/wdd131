@@ -1,0 +1,32 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header,main,footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    background-color: #09bc48;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media  screen and (min-width: 500px) {
+    header{
+        background-color:black ;
+        color:aliceblue;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+        background-color: aqua;
+        color: rgb(183, 15, 18);
+    }
+}
+
+section{
+    padding: 1rem;
+    background-color: #fff;
+}
