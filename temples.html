@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+     <script src="scripts/temples.js" defer></script>
+    
+
     <title>Document</title>
 </head>
+
 <body>
     <header class="contenedor contenedor-header">
-        <nav class="contenido-header barra">
-            <a href="index.html">Home</a>
-            <a href="index.html"></a>
+        <div class="logo">
+            <h1>Temple Album</h1>
+        </div>
+        <nav>
+            <button id="menu" title="Open menu"></button>
+            <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Old</a></li>
+            <li><a href="index.html">New</a></li>
+            <li><a href="index.html">Large</a></li>
+            <li><a href="index.html">Small</a></li>
+            </ul>
         </nav>
 
     </header>
-    
+    <main class="contenedor">
+       
+        <div class="temple-grid">
+            <figure class="contenido-images">
+                <img src="images/temple.jpg" alt="Picture of the Church!!" loading="lazy">
+                <figcaption>Washigton DC Temple</figcaption>
+            </figure>
+            <figure class="contenido-images">
+                <img src="images/temple.jpg" alt="Picture of the Church!!" loading="lazy">
+                <figcaption>Washigton DC Temple</figcaption>
+            </figure>
+            <figure class="contenido-images">
+                <img src="images/temple.jpg" alt="Picture of the Church!!" loading="lazy">
+                <figcaption>Washigton DC Temple</figcaption>
+            </figure>
+            <figure class="contenido-images">
+                <img src="images/temple.jpg" alt="Picture of the Church!!" loading="lazy">
+                <figcaption>Washigton DC Temple</figcaption>
+            </figure>
+            <figure class="contenido-images">
+                <img src="images/temple.jpg" alt="Picture of the Church!!" loading="lazy">
+                <figcaption>Washigton DC Temple</figcaption>
+            </figure>
+            <figure class="contenido-images">
+                <img src="images/temple.jpg" alt="Picture of the Church!!" loading="lazy">
+                <figcaption>Washigton DC Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer class="footer-copyright contenedor">
+        <p> &copy; <span id="currentYear"></span> | Christian Pena</p>
+        <p id="lastModified"></p>
+    </footer>
+
+  
 </body>
+
 </html>

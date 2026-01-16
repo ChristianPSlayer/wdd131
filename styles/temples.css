@@ -1,0 +1,116 @@
+:root{
+    --navigation-color:#0d41dd;
+    --white-text:#fff;
+    --heading-font:'montserrat', 'sans-serif';
+    --body-font:'Opens Sans', sans-serif;
+    
+}
+
+
+
+html{
+box-sizing: border-box;
+font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--body-font);
+    text-transform: uppercase;
+}
+h1,h2,h3, a{
+    font-family: var(--heading-font);
+    letter-spacing: .4rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+ul,li,a{
+    text-decoration: none;
+}
+figcaption{font-size: 2rem;
+        padding: 2rem 0rem;
+        }
+
+
+.contenedor-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--navigation-color);
+    padding: 2rem 0rem;
+    
+    
+}
+.barra{
+    padding: 2rem 0rem;
+   
+}
+.barra ul{
+    font-size: 3rem;
+    color: var(--white-text);
+
+}
+
+
+
+/***Hambueger menu***/
+#menu{
+   display:block;
+   font-size: 2rem; 
+   background: none;
+  border: none;
+   cursor: pointer;
+}
+#menu::before{
+    content: "☰";
+}
+#menu.open::before{
+    content: "❌";
+    
+}
+.navigation{
+    display: none;
+    flex-direction: column;
+    padding: 1rem 1rem;
+     list-style: none;
+}
+.navigation.open{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.navigation li a{
+    font-size: 2rem;
+    color:var(--white-text) ;
+}
+
+
+.contenido-images figcaption{
+    text-align: center;
+}
+
+/*****Footer*****/
+
+footer{
+    background-color: var(--navigation-color);
+    padding: 2rem 0rem;
+    text-align: center;
+    color: var(--white-text);
+
+}
+footer p{
+    font-size: 1.5rem;
+}
