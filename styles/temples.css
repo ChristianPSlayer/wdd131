@@ -2,7 +2,7 @@
     --navigation-color:#0d41dd;
     --white-text:#fff;
     --heading-font:'montserrat', 'sans-serif';
-    --body-font:'Opens Sans', sans-serif;
+    --body-font:'Open Sans', sans-serif;
     
 }
 
@@ -48,9 +48,13 @@ figcaption{font-size: 2rem;
     align-items: center;
     background-color: var(--navigation-color);
     padding: 2rem 0rem;
+    position: relative;
+    align-items: center;
+    min-height: 80px;
     
     
 }
+
 .barra{
     padding: 2rem 0rem;
    
@@ -78,21 +82,60 @@ figcaption{font-size: 2rem;
     content: "❌";
     
 }
+#menu.open{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    
+}
+header h1.hide{
+    display: none;
+}
+
 .navigation{
     display: none;
     flex-direction: column;
     padding: 1rem 1rem;
      list-style: none;
 }
-.navigation.open{
-    display: flex;
-    flex-direction: column;
+.logo{
     
+    display: block;
+    
+}
+.contenedor-header h1{
+    display: block;
+}
+.contenedor-header h1.hide{
+    display: none!important;
+}
+.logo.open{
+    display: none;
+   
 }
 
 
+.navigation.open{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: var(--navigation-color);
+    padding: 3rem;
+  
+    
+}
 
+.navegation li{
+    width: 100%;
+    text-align: center;
+}
 .navigation li a{
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
     font-size: 2rem;
     color:var(--white-text) ;
 }
@@ -101,6 +144,10 @@ figcaption{font-size: 2rem;
 .contenido-images figcaption{
     text-align: center;
 }
+
+
+
+
 
 /*****Footer*****/
 

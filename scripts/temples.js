@@ -6,7 +6,10 @@ document.getElementById('lastModified').innerHTML = `last Modified: ${document.l
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+const logo = document.querySelector('.contenedor-header h1');
 hamButton.addEventListener('click', ()=>{
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
+    logo.classList.toggle('hide');
+
 });
