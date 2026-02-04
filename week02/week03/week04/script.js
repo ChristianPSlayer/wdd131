@@ -3,6 +3,16 @@
 
 document.querySelector("#currentyear").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
+const yearSpan = document.querySelector("#currentyear");
+const modification = document.querySelector("#lastModified");
+
+if (yearSpan){
+    yearSpan.textContent = new Date().getFullYear();
+}
+if (modification){
+    modification.textContent = `Last Modification: ${document.lastModified}`;
+}
+
 const temples = [
   {
     
