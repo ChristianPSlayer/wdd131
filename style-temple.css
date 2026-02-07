@@ -37,6 +37,9 @@ nav{
     padding: 2rem 0rem;
      
 }
+nav ul{
+    display:flex; 
+}
 
 img{
     max-width: 100%;
@@ -75,8 +78,10 @@ figcaption{font-size: 2rem;
 main.contenedor{
   transition: margin-top 0.3s ease;
 }
+@media (max-width: 600px) { /* Solo en mobile despliega el menu hamburguesa! */
 .menu-open main.contenedor{
     margin-top: 20rem; 
+}
 }
 
 .navigation{
@@ -182,12 +187,7 @@ section img{
     }
 }
 
-.temple-grid {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 2rem;
-    padding: 2rem;
-}
+
 @media (min-width:600px) {
     .temple-grid{
         grid-template-columns: repeat(2, 1fr); 
