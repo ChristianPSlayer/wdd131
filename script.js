@@ -105,6 +105,14 @@ const newLink = document.querySelector("#new");
 const largeLink = document.querySelector("#large");
 const smallLink = document.querySelector("#small");
 
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+});
 
 const templesContainer = document.querySelector("#temple-cards");
 
