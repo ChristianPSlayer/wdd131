@@ -88,6 +88,10 @@ main.contenedor{
     justify-content: space-around;
     background-color: var(--navigation-color);
 }
+nav{
+    
+    background-color: var(--navigation-color);
+}
 
 
 .navigation li{
@@ -160,7 +164,7 @@ section img{
 }
 
 
-
+/* --- Ajustes para el Menú Hamburguesa --- */
 @media (max-width: 600px) {
     .navigation {
         display: none; 
