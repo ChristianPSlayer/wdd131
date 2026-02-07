@@ -18,7 +18,7 @@ body{
     text-transform: uppercase;
 }
 h1,h2,h3, a{
-    font-family: var(--heading-font);
+    
     letter-spacing: .4rem;
 }
 h1{
@@ -35,6 +35,7 @@ p{
 }
 nav{
     padding: 2rem 0rem;
+    background-color: var(--navigation-color);
      
 }
 nav ul{
@@ -91,10 +92,6 @@ main.contenedor{
     padding: 0;
     margin: 0;
     justify-content: space-around;
-    background-color: var(--navigation-color);
-}
-nav{
-    
     background-color: var(--navigation-color);
 }
 
