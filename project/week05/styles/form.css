@@ -3,13 +3,19 @@
     --form-bg-color: #d0cbd1;
     --input-bg-color: #ffffff;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
+    color: #333;
+    line-height: 1.6;
+
 }
 form{
     background-color: var(--form-bg-color);
@@ -29,6 +35,16 @@ header, footer{
     width: 100%;
     text-align: center;
     padding: 1rem 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+main{
+    max-width: 650px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+
 }
 label{
     display: block;
