@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Portfolio Technical Artist y Software Developer. Projects in Maya, C#, and web development.">
+    <title>Chris 3D-Dev Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header-container">
+                <div class="logo">Chris 3D-Dev</div>
+                <button id="menu-button" aria-label="Open Menu"><span>&#9776;</span><span>X</span></button>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Chris 3D-Dev</h1>
+        <p>Do you have a project in Maya or need a C# developer? Contact me!</p>
+
+        <form method="get" action="thanks.html" class="contact-form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="maya">Maya 3D Project</option>
+                <option value="web">Web Development</option>
+                <option value="csharp">C# Backend Logic</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Christian Pena | <a href="references.html">References</a></p>
+        <p id="visit-count"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Portfolio Technical Artist y Software Developer. Projects in Maya, C#, and web development.">
+    <title>Chris 3D-Dev Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/ChrisLogo.jpg" alt="Chris 3D-Dev Logo" id="logo-img">
+            </div>
+            <span class="logo-text">Chris 3D-Dev</span>
+
+            <button id="menu-button" aria-label="Open Menu">
+                <span>&#9776;</span>
+                <span>X</span>
+            </button>
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Technical Artist & Software Developer</h1>
+            <p>Merging professional 3D design with software engineering.</p>
+        </section>
+
+        <div id="project-grid" class="project-grid"></div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christian Pena | <a href="references.html">References</a></p>
+        <p id="visit-count"></p>
+    </footer>
+    <div id="projectModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <h2 id="modalTitle">h</h2>
+            <div class="slider-container">
+                <button id="prevBtn" class="nav-btn">&#10094;</button>
+                <img id="imgModal" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Project Image">
+                <button id="nextBtn" class="nav-btn">&#10095;</button>
+            </div>
+            <p id="caption"></p>
+        </div>
+    </div>
+</body>
+
+</html>
